@@ -18,3 +18,5 @@ FEATURES
 - Restarting games
 
 Django BLACKJACK CARDGAME WEBAPP is a WORK IN PROGRESS, and any work is NOT final.
+
+v0.0.1 Release: https://github.com/FergusValentine/blackjackweb/releases/tag/v0.0.1
