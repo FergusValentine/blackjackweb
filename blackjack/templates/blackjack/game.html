@@ -1,0 +1,42 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1 style="text-align: center">Blackjack</h1>
+
+    <div class="Dealer" style="position: relative; height: 10rem; text-align: center;">
+        <div id="dealer-cards" style="font-size: 8rem; display: inline-flex; justify-content: center; align-items: center; gap: 0.5rem; position: absolute; left: 50%; transform: translateX(-50%);">
+
+        </div>
+
+        <div id="dealer-offset-card" style="font-size: 8rem; position: absolute; left: 50%; transform: translateX(-500%);">
+            &#127136;
+        </div>
+    </div>
+
+   <div id="victory-container" style="height: 4.5rem; text-align: center;">
+        <div id="victory-screen" style="display: none;">
+            <h2 id="victory-message">You Win!</h2>
+            <button id="restart">Play again!</button>
+        </div>
+   </div>
+
+    <div class="Player" style="position: relative; text-align: center; display: flex; justify-content: center; align-items: center;">
+        <div id="player-cards" style="font-size: 8rem;">
+
+        </div>
+    </div>
+
+    <div class = "Controls" style="text-align: center">
+        <h1>Controls</h1>
+        <button id="hit">Hit!</button>
+        <button id="stand">Stand!</button>
+    </div>
+    <script src="{% static 'blackjack/main.js' %}"></script>
+</body>
+</html>
